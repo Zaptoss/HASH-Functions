@@ -1,0 +1,12 @@
+goos: linux
+goarch: amd64
+pkg: HASH-SHA-1
+cpu: Intel(R) Core(TM) i3-4010U CPU @ 1.70GHz
+                │  NewBench.txt   │           OldBench.txt            │
+                │     sec/op      │     sec/op       vs base          │
+SHA1String16-4     0.005578n ± 1%    0.001520n ± 0%  -72.75% (n=1000)
+SHA1String32-4    0.0026920n ± 0%   0.0007734n ± 0%  -71.27% (n=1000)
+SHA1String64-4    0.0023040n ± 0%   0.0004536n ± 0%  -80.31% (n=1000)
+SHA1String128-4   0.0016350n ± 0%   0.0002706n ± 1%  -83.45% (n=1000)
+SHA1String255-4   0.0013040n ± 0%   0.0001838n ± 1%  -85.90% (n=1000)
+geomean            0.002364n        0.0004839n       -79.53%
